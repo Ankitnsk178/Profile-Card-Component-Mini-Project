@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDark: hsl(229, 23%, 23%);
+    --DarkGrayish: hsl(227, 10%, 46%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+}
+
+body{
+    background: url(../images/bg-pattern-top.svg) left -25rem top -30rem, url(../images/bg-pattern-bottom.svg) right -25rem bottom -30rem, var(--DarkCyan);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: white;
+    width: 400px;
+    height: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.img_container{
+    background: url(../images/bg-pattern-card.svg);
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.profile_pic{
+    width: 7rem;
+    border-radius: 10rem;
+    border: 8px solid white;
+    transform: translateY(3rem);
+}
+
+.details{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+.name_and_age{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.name{
+    color: var(--VeryDark);
+    font-weight: 700;
+}
+
+.age{
+    color: var(--DarkGrayish);
+    font-weight: 500;
+}
+
+.address{
+    text-align: center  ;
+    color: var(--DarkGrayish);
+    font-size: 0.9rem;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.3rem;
+}
+
+.num_and_desc{
+    text-align: center;
+}
+
+.num{
+    color: var(--VeryDark);
+    font-weight: 700;
+}
+
+.desc{
+    color: var(--DarkGray);
+    font-size: 0.7rem;
+    margin-top: 0.2rem;
+}
+
+@media (max-width:410px){
+    .card{
+        width: 90%;
+        margin: 5rem auto;
+    }
+}
